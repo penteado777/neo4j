@@ -1,0 +1,285 @@
+CREATE (:User {nome: "Jose", idade: 20, cidade: "São Paulo"}) 
+CREATE (:Movie {nome: "11 Homens e 1 Segredo"}) 
+CREATE (:Genre {nome: "Ação"})
+CREATE (:Actor {nome: "George Clooney and Brad Pitt"})
+CREATE (:Director {nome: "Steven Soderbergh"})
+
+CREATE (u:User	{nome: 'Jose', idade: 20, cidade: "São Paulo"	})
+CREATE (f:Movie {título: '11 Homens e 1 Segredo'	})
+CREATE (g:Genre {genêro: 'Ação'	})
+CREATE (a:Actor {ator: 'George Clooney and Brad Pitt'	})
+CREATE (d:Director {diretor:'Steven Soderbergh'	})
+CREATE (a)-[:ACTED_IN]->(f)-[:DIRECTED]->(d)
+
+----
+
+CREATE (:User {nome: "Luis", idade: 21, cidade: "São Paulo"}) 
+CREATE (:Movie {nome: "A Hora do Pesadelo"})
+CREATE (:Genre {nome: "Terror"})
+CREATE (:Actor {nome: "Robert Englund"})
+CREATE (:Director {nome: "Wes Craven"})
+
+CREATE (u:User {nome: "Luis", idade: 21, cidade: "São Paulo"}) 
+CREATE (f:Movie {nome: "A Hora do Pesadelo"})
+CREATE (g:Genre {nome: "Terror"})
+CREATE (a:Actor {nome: "Robert Englund"})
+CREATE (d:Director {nome: "Wes Craven"})
+CREATE (a)-[:ACTED_IN]->(f)-[:DIRECTED]->(d)
+
+------
+
+CREATE (:User {nome: "Pedro", idade: 22, cida-de: "São Paulo"}) 
+CREATE (:Movie {nome: "Um Morto Muito Louco 2"})
+CREATE (:Genre {nome: "Comédia"})
+CREATE (:Actor {nome: "Terry Kiser"})
+CREATE (:Director {nome: "Robert Klane"})
+
+CREATE (u:User {nome: "Pedro", idade: 22, cida-de: "São Paulo"}) 
+CREATE (f:Movie {nome: "Um Morto Muito Louco 2"})
+CREATE (g:Genre {nome: "Comédia"})
+CREATE (a:Actor {nome: "Terry Kiser"})
+CREATE (d:Director {nome: "Robert Klane"})
+CREATE (a)-[:ACTED_IN]->(f)-[:DIRECTED]->(d)
+
+--------------
+
+CREATE (:User {nome: "João", idade: 33, cidade: "São Paulo"}) 
+CREATE (:Movie {nome: "A Espera de um milagre"})
+CREATE (:Genre {nome: "Drama"})
+CREATE (:Actor {nome: "Michael Clarke"})
+CREATE (:Director {nome: "Frank Darabont"})
+
+CREATE (u:User {nome: "João", idade: 33, cidade: "São Paulo"}) 
+CREATE (f:Movie {nome: "A Espera de um milagre"})
+CREATE (g:Genre {nome: "Drama"})
+CREATE (a:Actor {nome: "Michael Clarke"})
+CREATE (d:Director {nome: "Frank Darabont"})
+CREATE (a)-[:ACTED_IN]->(f)-[:DIRECTED]->(d)
+
+------------------
+
+CREATE (:User {nome: "Rafael", idade: 34, cidade: "São Paulo"}) 
+CREATE (:Movie {nome: "High School Musical"})
+CREATE (:Genre {nome: "Musical"})
+CREATE (:Actor {nome: "Zac Efron"})
+CREATE (:Director {nome: "Kenny Ortega"})
+
+CREATE (u:User {nome: "Rafael", idade: 34, cidade: "São Paulo"}) 
+CREATE (f:Movie {nome: "High School Musical"})
+CREATE (g:Genre {nome: "Musical"})
+CREATE (a:Actor {nome: "Zac Efron"})
+CREATE (d:Director {nome: "Kenny Ortega"})
+CREATE (a)-[:ACTED_IN]->(f)-[:DIRECTED]->(d)
+
+--------------
+
+
+CREATE (:User {nome: "Miguel", idade: 35, cidade: "São Paulo"}) 
+CREATE (:Movie {nome: "Jumanji"})
+CREATE (:Genre {nome: "Aventura"})
+CREATE (:Actor {nome: "Dwayne Johnson"})
+CREATE (:Director {nome: "Joe Johnson"})
+
+CREATE (u:User {nome: "Miguel", idade: 35, cidade: "São Paulo"}) 
+CREATE (f:Movie {nome: "Jumanji"})
+CREATE (g:Genre {nome: "Aventura"})
+CREATE (a:Actor {nome: "Dwayne Johnson"})
+CREATE (d:Director {nome: "Joe Johnson"})
+CREATE (a)-[:ACTED_IN]->(f)-[:DIRECTED]->(d)
+
+-----------
+
+
+CREATE (:User {nome: "André", idade: 46, cidade: "São Paulo"}) 
+CREATE (:Movie {nome: "Matrix"})
+CREATE (:Genre {nome: "Ficção Científica"})
+CREATE (:Actor {nome: "Keanu Reeves"})
+CREATE (:Director {nome: "Lana Wachowski"})
+
+CREATE (u:User {nome: "André", idade: 46, cidade: "São Paulo"}) 
+CREATE (f:Movie {nome: "Matrix"})
+CREATE (g:Genre {nome: "Ficção Científica"})
+CREATE (a:Actor {nome: "Keanu Reeves"})
+CREATE (d:Director {nome: "Lana Wachowski"})
+CREATE (a)-[:ACTED_IN]->(f)-[:DIRECTED]->(d)
+
+-------------------
+
+
+
+CREATE (:User {nome: "Alberto", idade: 47, cidade: "São Paulo"}) 
+CREATE (:Movie {nome: "Narnia"})
+CREATE (:Genre {nome: "Fantasia"})
+CREATE (:Actor {nome: "Georgie Henley"})
+CREATE (:Director {nome: "Andrew Adamson"})
+
+CREATE (u:User {nome: "Alberto", idade: 47, cidade: "São Paulo"}) 
+CREATE (f:Movie {nome: "Narnia"})
+CREATE (g:Genre {nome: "Fantasia"})
+CREATE (a:Actor {nome: "Georgie Henley"})
+CREATE (d:Director {nome: "Andrew Adamson"})
+CREATE (a)-[:ACTED_IN]->(f)-[:DIRECTED]->(d)
+
+
+---------------
+
+CREATE (:User {nome: "Gabriel", idade: 48, cidade: "São Paulo"}) 
+CREATE (:Movie {nome: "Titanic"})
+CREATE (:Genre {nome: "Romance"})
+CREATE (:Actor {nome: "Leonardo DiCaprio"})
+CREATE (:Director {nome: "James Cameron"})
+
+CREATE (u:User {nome: "Gabriel", idade: 48, cidade: "São Paulo"}) 
+CREATE (f:Movie {nome: "Titanic"})
+CREATE (g:Genre {nome: "Romance"})
+CREATE (a:Actor {nome: "Leonardo DiCaprio"})
+CREATE (d:Director {nome: "James Cameron"})
+CREATE (a)-[:ACTED_IN]->(f)-[:DIRECTED]->(d)
+
+----------
+
+
+CREATE (:User {nome: "Simas", idade: 59, cidade: "São Paulo"}) 
+CREATE (:Movie {nome: "La Casa de Papel: El Fenómeno(2020)"})
+CREATE (:Genre {nome: "Documentário"})
+CREATE (:Actor {nome: "Alba Flores"})
+CREATE (:Director {nome: "Luis Alfaro"})
+
+CREATE (u:User {nome: "Simas", idade: 59, cidade: "São Paulo"}) 
+CREATE (f:Movie {nome: "La Casa de Papel: El Fenómeno(2020)"})
+CREATE (g:Genre {nome: "Documentário"})
+CREATE (a:Actor {nome: "Alba Flores"})
+CREATE (d:Director {nome: "Luis Alfaro"})
+CREATE (a)-[:ACTED_IN]->(f)-[:DIRECTED]->(d)
+
+
+---SERIES---
+
+CREATE (:Series {nome: "Round 6 Squid Game 1ª Temporada"})
+CREATE (:Actor {nome: "Seong Gi-hun"})
+CREATE (:Director {nome: "Hwang Dong-hyuk"})
+
+CREATE (s:Series {nome: "Round 6 Squid Game 1ª Temporada"})
+CREATE (a:Actor {nome: "Seong Gi-hun"})
+CREATE (d:Director {nome: "Hwang Dong-hyuk"})
+CREATE (a)-[:ACTED_IN]->(s)-[:DIRECTED]->(d)
+
+------
+
+CREATE (:Series {titulo_serie: "Wandinha (Wednesday) (1ª Temporada)"}) 
+CREATE (Actor {ator_serie: "Jenna Ortega"}) 
+CREATE (Director {diretor_nome: "Tim Burton"})
+
+CREATE (s:Series {titulo_serie: "Wandinha (Wednesday) (1ª Temporada)"}) 
+CREATE (a:Actor {ator_serie: "Jenna Ortega"}) 
+CREATE (d:Director {diretor_nome: "Tim Burton"})
+CREATE (a)-[:ACTED_IN]->(s)-[:DIRECTED]->(d)
+
+---------------
+
+
+CREATE (:Series {titulo_serie: "Stranger Things (4ª Temporada)"}) 
+CREATE (:Actor {ator_serie: "Millie Bobby Brown"})
+CREATE (:Director {diretor_nome: "Matt e Ross Duffer"})
+
+CREATE (s:Series {titulo_serie: "Stranger Things (4ª Temporada)"}) 
+CREATE (a:Actor {ator_serie: "Millie Bobby Brown"})
+CREATE (d:Director {diretor_nome: "Matt e Ross Duffer"})
+CREATE (a)-[:ACTED_IN]->(s)-[:DIRECTED]->(d)
+
+----------
+
+
+CREATE (:Series {titulo_serie: "Dahmer: Um Canibal Americano (Minissérie)"}) 
+CREATE (:Actor {ator_serie: "Dahmer: Um Canibal Americano (Minissérie)"}) 
+CREATE (:Director {diretor_nome: "Ryan Murphy"})
+
+CREATE (s:Series {titulo_serie: "Dahmer: Um Canibal Americano (Minissérie)"}) 
+CREATE (a:Actor {ator_serie: "Dahmer: Um Canibal Americano (Minissérie)"}) 
+CREATE (d:Director {diretor_nome: "Ryan Murphy"})
+CREATE (a)-[:ACTED_IN]->(s)-[:DIRECTED]->(d)
+
+------------
+
+
+CREATE (:Series {titulo_serie: "Bridgerton (1ª Temporada)"})
+CREATE (:Actor {ator_serie: "Nicola Coughlan"}) 
+CREATE (:Director {diretor_nome: "Shonda Rhimes"})
+
+CREATE (s:Series {titulo_serie: "Bridgerton (1ª Temporada)"})
+CREATE (a:Actor {ator_serie: "Nicola Coughlan"}) 
+CREATE (d:Director {diretor_nome: "Shonda Rhimes"})
+CREATE (a)-[:ACTED_IN]->(s)-[:DIRECTED]->(d)
+
+
+-----
+
+
+CREATE (:Series {titulo_serie: "O Gambito da Rainha (The Queen's Gambit) (Minissérie)"}) 
+CREATE (:Actor {ator_serie: "Anya Taylor-Joy"}) 
+CREATE (:Director {diretor_nome: "Scott Frank"})
+
+CREATE (s:Series {titulo_serie: "O Gambito da Rainha (The Queen's Gambit) (Minissérie)"}) 
+CREATE (a:Actor {ator_serie: "Anya Taylor-Joy"}) 
+CREATE (d:Director {diretor_nome: "Scott Frank"})
+CREATE (a)-[:ACTED_IN]->(s)-[:DIRECTED]->(d)
+
+
+-------
+
+
+CREATE (:Series {titulo_serie: "La Casa de Papel (Money Heist) (Parte 4 e Parte 5)"}) 
+CREATE (:Actor {ator_serie: "Álvaro Morte"})
+CREATE (:Director {diretor_nome: "Jesús Colmenar"})
+
+CREATE (s:Series {titulo_serie: "La Casa de Papel (Money Heist) (Parte 4 e Parte 5)"}) 
+CREATE (a:Actor {ator_serie: "Álvaro Morte"})
+CREATE (d:Director {diretor_nome: "Jesús Colmenar"})
+CREATE (a)-[:ACTED_IN]->(s)-[:DIRECTED]->(d)
+
+
+-------
+
+
+CREATE (:Series {titulo_serie: "Lupin (Parte 1 e 2)"})
+CREATE (:Actor {ator_serie: "Omar Sy"})
+CREATE (:Director {diretor_nome: "Louis Leterrier"})
+
+CREATE (s:Series {titulo_serie: "Lupin (Parte 1 e 2)"})
+CREATE (a:Actor {ator_serie: "Omar Sy"})
+CREATE (d:Director {diretor_nome: "Louis Leterrier"})
+CREATE (a)-[:ACTED_IN]->(s)-[:DIRECTED]->(d)
+
+
+------------------
+
+
+CREATE (:Series {titulo_serie: "O Agente Noturno (The Night Agent) (1ª Temporada)"}) 
+CREATE (:Actor {ator_serie: "Gabriel Basso"})
+CREATE (:Director {diretor_nome: "Seth Gordon"})
+
+CREATE (s:Series {titulo_serie: "O Agente Noturno (The Night Agent) (1ª Temporada)"}) 
+CREATE (a:Actor {ator_serie: "Gabriel Basso"})
+CREATE (d:Director {diretor_nome: "Seth Gordon"})
+CREATE (a)-[:ACTED_IN]->(s)-[:DIRECTED]->(d)
+
+
+-----------
+
+
+CREATE (:Series {titulo_serie: "Bebê Rena (Baby Reindeer) (Minissérie)"}) 
+CREATE (:Actor {ator_serie: " Richard Gadd"})
+CREATE (:Director {diretor_nome: " Richard Gadd"})
+
+CREATE (s:Series {titulo_serie: "Bebê Rena (Baby Reindeer) (Minissérie)"}) 
+CREATE (a:Actor {ator_serie: " Richard Gadd"})
+CREATE (d:Director {diretor_nome: " Richard Gadd"})
+CREATE (a)-[:ACTED_IN]->(s)-[:DIRECTED]->(d)
+
+
+
+
+
+
+
+
