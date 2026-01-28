@@ -1,0 +1,52 @@
+CREATE
+({nome: "José"})-[:ESCUTA]->(n1 {music: "Só um pagode(Ao Vivo)"})-[:GENERO]->({genre: "Pagode"}),(n1)-[:ARTISTA]->({artist: "Leizinho"})
+
+({nome: "Joana"})-[:ESCUTA]->(n3 {music: "Cheia de Manias"})-[:GENERO]->({genre: "Pagode"}),(n3)-[:ARTISTA]->({artist: "Luis Carlos"}),
+
+({nome: "João"})-[:ESCUTA]->(n9 {music: "Esquema Preferido"})-[:GENERO]->({genre: "Forró1"}), (n9)-[:ARTISTA]->({artist: "Rodrigo Barão"}),
+
+({nome: "Albertina"})-[:ESCUTA]->(n13 {music: "Xote dos Milagres"})-[:GENERO]->({genre: "Forró"}), (n13)-[:ARTISTA]->({artist: "Tato"}),
+
+({nome: "Maria"})-[:ESCUTA]->(n17 {music: "It´s My Life"})-[:GENERO]->({genre: "Rock"}), (n17)-[:ARTISTA]->({artist: "John Bon Jovi"}),
+
+({nome: "Magnólia"})-[:ESCUTA]->(n21 {music: "In The End"})-[:GENERO]->({genre: "Rock"}), (n21)-[:_RELATED]->({artist: "Chester Bennington and Mike Shinoda"}),
+
+({nome: "Joaquim"})-[:ESCUTA]->(n26 {music: "Nuthin But A G"})-[:GENERO]->({genre: "Hip Hop"}), (n26)-[:ARTISTA]->({artist: "Dr Dre"}),
+
+({nome: "Mariana"})-[:ESCUTA]->(n30 {music: "Killing Me Softly With His Song"})-[:GENERO]->({genre: "Hip Hop"}), (n30)-[:ARTISTA]->({artist: "Lauryn Hill"}),
+
+({nome: "Pedro"})-[:ESCUTA]->(n34 {music: "Evidências"})-[:GENERO]->({genre: "Sertanejo"}), (n34)-[:ARTISTA]->({artist: "Chitãozinho e Xororó"}),
+
+({nome: "Josefa"})-[:ESCUTA]->(n39 {music: "Apaga Apaga Apaga"})-[:GENERO]->({genre: "Sertanejo"}), (n39)-[:ARTISTA]->({artist: "Danilo e Davi"})
+
+
+
+
+
+CREATE
+({name: "José"})-[:CURTIU]->({group: "Turma do Pagode"}),
+({name: "Joana"})-[:CURTIU]->({group: "Raça Negra"}),
+({name: `: "João"})-[:CURTIU]->({group: "Barões do Forró"}),
+({name: "Albertina"})-[:CURTIU]->({group: "Fala Mansa"}),
+({name: "Maria"})-[:CURTIU]->({group: "Bon Jovi"}),
+({name: "Magnólia"})-[:CURTIU]->({name: "Chester Bennington and Mike Shinoda"}),
+({name: "Joaquim"})-[:CURTIU]->({artist: "Dr Dre"}),
+({name: "Mariana"})-[:CURTIU]->({group: "Fugges"}),
+({name: "Pedro"})-[:CURTIU]->({artist: "Chitãozinho e Xororó"}),
+({name: "Josefa"})-[:CURTIU]->({artist: "Danilo e Davi"})
+
+
+
+
+CREATE 
+({group: "Raça Negra"})<-[:SEGUE]-({name: "José"})-[:SEGUE]->({group: "Turma do Pagode"}),
+({group: "Revelação"})<-[:SEGUE]-({name: "Joana"})-[:SEGUE]->({group: "Raça Negra"}),
+({group: "Fala Mansa"})<-[:SEGUE]-({name: "João"})-[:SEGUE]->({group: "Barões do Forró"}),
+({artist: "Luiz Gonzaga"})<-[:SEGUE]-({name: "Albertina"})-[:SEGUE]->({group: "Fala Mansa"}),
+({group: "Lez Zepellin"})<-[:SEGUE]-({name: "Maria"})-[:SEGUE]->({group: "Bon Jovi"}),
+({group: "Queen"})<-[:SEGUE]-({name: "Magnólia"})-[:SEGUE]->({artist: "Chester Bennington and Mike Shinoda"}),
+({artst: "Snoop Dog"})<-[:SEGUE]-({name: "Joaquim"})-[:SEGUE]->({artist: "Dr Dre"}),
+({group: "NWA"})<-[:SEGUE]-({name: "Mariana"})-[:SEGUE]->({group: "Fugees"}),
+({artist: "Danilo e Davi"})<-[:SEGUE]-({name: "Pedro"})-[:SEGUE]->({artist: "Chitãozinho e Xororó"}),
+({artist: "Ana Castela"})<-[:SEGUE]-({name: "Josefa"})-[:SEGUE]->({artist: "Danilo e Davi"})
+
